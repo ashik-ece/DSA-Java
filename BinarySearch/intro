@@ -34,3 +34,20 @@ Step - 3: if middle element is equal to the target, return the index of the midd
 - then we change the start and end pointer as needed.
 
 Step - 4 : IF the start > end, => Element not found
+
+
+### ORDER - Agnostic Binary Search (what if the array is sorted in descending order)
+
+eg : arr[90,75, 18, 12, 6, 4, 3 , 1]
+target = 75;
+
+- if target > middle => search left.
+end = mid - 1;
+- if target > middle => search right.
+start = mid + 1;
+
+
+- How to check whether the array is sorted in ascending order or descending order?
+
+    Answer : Take two elements(preferably first and last) and compare. if arr[start] > arr[end], its descending, else its ascending
+              if its equal, then all the elements in the array are the same
