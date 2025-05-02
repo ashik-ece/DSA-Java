@@ -36,7 +36,9 @@ Step - 3: if middle element is equal to the target, return the index of the midd
 Step - 4 : IF the start > end, => Element not found
 
 
-### ORDER - Agnostic Binary Search (what if the array is sorted in descending order)
+### ORDER - Agnostic Binary Search (what if the array is sorted in descending order) 
+
+# Time complexity of Agnostic binary search is the same.
 
 eg : arr[90,75, 18, 12, 6, 4, 3 , 1]
 target = 75;
