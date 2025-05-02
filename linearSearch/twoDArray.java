@@ -1,3 +1,4 @@
+package linearSearch;
 // search the target element in the 2d array
 
 import java.util.Arrays;

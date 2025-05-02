@@ -1,3 +1,5 @@
+package linearSearch;
+
 // Find the max element in the 2D Array
 public class maxIn2DArray {
 
