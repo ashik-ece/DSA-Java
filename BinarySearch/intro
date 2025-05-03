@@ -55,4 +55,9 @@ start = mid + 1;
               if its equal, then all the elements in the array are the same
 
 
-When do we use binary search
+When do we use binary search?
+
+- if we have to deal with sorted array, 90% of the times, try to solve it with binary search.
+- other problem statements include, something like, 'you are required to get one particular answer' and you are following
+a continuous  sequence to get that answer. eg: Sqrt of a number.
+- dealing with sequence of numbers which are sorted.
