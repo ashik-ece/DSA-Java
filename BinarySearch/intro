@@ -53,3 +53,6 @@ start = mid + 1;
 
     Answer : Take two elements(preferably first and last) and compare. if arr[start] > arr[end], its descending, else its ascending
               if its equal, then all the elements in the array are the same
+
+
+When do we use binary search
