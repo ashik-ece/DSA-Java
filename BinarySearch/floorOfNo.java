@@ -6,11 +6,20 @@ package BinarySearch;
 
 public class floorOfNo {
 
-
+    // return the greatest number <= target
     public static int floorNo(int[] arr, int target) {
 
         int start = 0;
         int end = arr.length-1;
+
+        //what if the target is smaller than the smallest element in the array? (corner case)
+        // but even if we don't add this, it will return -1 because, when the while loop terminates, the
+        // end index will go from 0 to -1
+        if(target < arr[0]) {
+            return -1;
+        }
+
+
 
         while(start <= end) {
             int mid = start + (end - start) / 2;
@@ -30,7 +39,7 @@ public class floorOfNo {
     }
     public static void main(String[] args) {
         int[] arr = { 2, 3, 5, 9, 14, 16, 18 };
-        int target = 14;
+        int target = 4;
         System.out.println(floorNo(arr, target));
     }
 
