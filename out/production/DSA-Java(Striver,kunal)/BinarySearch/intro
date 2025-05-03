@@ -1,0 +1,63 @@
+NOTES : INTRO
+
+- THE ARRAY MUST BE SORTED
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+target = 8
+
+# 1. Find the middle element of the array.
+# 2. If the middle element is equal to the target, return the index of the middle element.
+# 3. If the middle element is less than the target, search the right half of the array.
+# 4. If the middle element is greater than the target, search the left half of the array.
+# 5. Repeat steps 1-4 until the target is found or the array is empty.
+# 6. If the target is not found, return -1.
+# 7. The time complexity of binary search is O(log n) and the space complexity is O(1).
+# 8. Binary search is more efficient than linear search for large arrays.
+
+# TC (Best case) : O(1) - constant
+#    (Worst Case) : O(log N) [base 2]
+
+
+### ELEMENTS HAVE TO BE SORTED FOR BINARY SEARCH.
+
+Step - 1: Find the middle element of the array.
+middle(idx) = (low(idx) + high(idx)) // 2 [or middle = start + (end - start) / 2]
+
+Step - 2: If the target is greater than the middle element, search the right half of the array (start = mid + 1),
+          else search the left half of the array. (end = mid - 1)
+
+Step - 3: if middle element is equal to the target, return the index of the middle element.
+
+- we use two pointers (Start and end).
+- we put start at the beginning of the array and end at the end.
+- then we change the start and end pointer as needed.
+
+Step - 4 : IF the start > end, => Element not found
+
+
+### ORDER - Agnostic Binary Search (what if the array is sorted in descending order) 
+
+# Time complexity of Agnostic binary search is the same.
+
+eg : arr[90,75, 18, 12, 6, 4, 3 , 1]
+target = 75;
+
+- if target > middle => search left.
+end = mid - 1;
+- if target > middle => search right.
+start = mid + 1;
+
+
+- How to check whether the array is sorted in ascending order or descending order?
+
+    Answer : Take two elements(preferably first and last) and compare. if arr[start] > arr[end], its descending, else its ascending
+              if its equal, then all the elements in the array are the same
+
+
+When do we use binary search?
+
+- if we have to deal with sorted array, 90% of the times, try to solve it with binary search.
+- other problem statements include, something like, 'you are required to get one particular answer' and you are following
+a continuous  sequence to get that answer. eg: Sqrt of a number.
+- dealing with sequence of numbers which are sorted.
