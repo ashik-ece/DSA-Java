@@ -24,19 +24,19 @@ public class LeetCode34_BruteForce {
             return result;
 
             //slightly more optimised approach (TC : O(N))
-            int first = -1;
-            int last = -1;
-            for(int k = 0; k < nums.length; k++) {
-                if(nums[k] == target) {
-                    if(first == -1) {
-                        first = k;
-                    }
-                    last = k;
-                }
-            }
-            result[0] = first;
-            result[1] = last;
-            return result;
+//            int first = -1;
+//            int last = -1;
+//            for(int k = 0; k < nums.length; k++) {
+//                if(nums[k] == target) {
+//                    if(first == -1) {
+//                        first = k;
+//                    }
+//                    last = k;
+//                }
+//            }
+//            result[0] = first;
+//            result[1] = last;
+//            return result;
         }
 
 }
