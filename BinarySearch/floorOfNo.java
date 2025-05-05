@@ -10,7 +10,7 @@ public class floorOfNo {
     public static int floorNo(int[] arr, int target) {
 
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length-1; 
 
         //what if the target is smaller than the smallest element in the array? (corner case)
         // but even if we don't add this, it will return -1 because, when the while loop terminates, the
